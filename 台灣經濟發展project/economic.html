@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="此網站介紹關於台灣過去70年的發展歷程與相關問題"
+    />
+    <title>台灣經濟發展</title>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "Grow"],
+          ["1999", 3497],
+          ["2000", 3723],
+          ["2001", 4503],
+          ["2002", 3292],
+          ["2003", 7352],
+          ["2004", 11440],
+          ["2005", 11258],
+          ["2006", 8240],
+          ["2007", 15232],
+          ["2008", 11118],
+          ["2009", 7168],
+          ["2010", 9168],
+          ["2011", 7376],
+          ["2012", 9253],
+          ["2013", 7521],
+          ["2014", 12154],
+          ["2015", 15337],
+          ["2016", 16368],
+          ["2017", 20149],
+          ["2018", 21113],
+          ["2019", 22624],
+          ["2020", 25423],
+        ]);
+
+        var options = {
+          title: "台湾高新科技发展60年产量数据",
+          legend: { position: "none" },
+        };
+
+        var chart = new google.visualization.Histogram(
+          document.getElementById("chart_div")
+        );
+        chart.draw(data, options);
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./twicon/twicon.css" />
+    <link rel="short icon" href="../资源文件/res/taiwanIcon.png" />
+  </head>
+  <body>
+    <header>
+      <h1><i class="twicon-main-island"></i>台灣經濟發展歷史</h1>
+      <h5>过去70年台湾经济发展的历史以及相关政策</h5>
+    </header>
+    <!-- 導覽列 -->
+    <nav>
+      <ul>
+        <li>
+          <a href="./index.html"><i class="twicon-main-island"></i> 首頁</a>
+        </li>
+        <li>
+          <a href="./Industrial reform.html"
+            ><i class="twicon-lovers-brg"></i> 農業改革</a
+          >
+        </li>
+        <li>
+          <a href="./Industrial reform.html"
+            ><i class="twicon-eluanbi-lh"></i> 工業改革</a
+          >
+        </li>
+        <li>
+          <a class="active" href="#"
+            ><i class="twicon-grand-hotel"></i> 經濟起飛</a
+          >
+        </li>
+        <li>
+          <a href="./author.html"><i class="twicon-l-17live"></i> 關於作者</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="forth">
+      <section class="left4">
+        <div id="chart_div"></div>
+      </section>
+      <section class="right4">
+        <h3>台灣的經濟發展呈現段落式增長</h3>
+
+        <br />
+        <p>
+          台湾资讯与半导体产业的成功关键在于政府
+          部门能审时度势地引进了先进技术。我国内地地 区改革开放
+          20年来，虽然也在技术引进方面取得
+          一些成绩，但由于条块分割、部门分割，以及传统体
+          制的惯性作用，出现许多重复引进、低水平引进的
+          情况。因此我们要在高新技术整体发展战略的考
+          虑下，避免重复引进，并且在引进后注意消化、吸收 及再创新。
+          此外，尤其要重视技术 自主创新。如前所述台
+          湾高新技术产业的发展由于过多依赖外国关键技
+          术已引发不少问题，所以我们要在发展高新技术产
+          业时引以为戒，通过强调基础科学研究加强技术创
+          新，通过深化科技体制改革、以市场为导向，使企业
+          成为创新利益分配的主体，通过强化企业技术创新
+          意识和行为的外部激励约束机制和内部激励机制，
+          实现科技成果与经济效益挂钩，加快科研成果转 化。
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
